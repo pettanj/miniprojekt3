@@ -18,13 +18,12 @@ for k = D
         
     end
     Hvec = [Hvec, h];
-    Result = [Result, ((4*Q) - Q2)/3]; 
+    Result = [Result, Q];
+    %Result = [Result, ((4*Q) - Q2)/3]; 
 end
-
 
 figure
 subplot(2,1,1);
-
 plot(D, Result);
 title('Resultat')   
 ylabel('Tryck (lb/ft³)')
@@ -32,6 +31,6 @@ xlabel('Djup (ft)')
 
 subplot(2,1,2);
 plot(D, Hvec);
-%title('Resultat')
 ylabel('Steglängd(h)')
 xlabel('Djup(ft)')
+
