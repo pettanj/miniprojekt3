@@ -14,7 +14,7 @@ for k = D
         FD2 = 62.5.*(k-y2).*wy2;
         Q = trapz(y, FD);
         Q2 = trapz(y2, FD2);
-        fel = (Q - Q2)/3;
+        fel = abs((Q - Q2)/3);
         
     end
     Hvec = [Hvec, h];
