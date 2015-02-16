@@ -19,7 +19,7 @@ for k = D
     end
     Hvec = [Hvec, h];
     Result = [Result, Q];
-    %Result = [Result, ((4*Q) - Q2)/3]; 
+    
 end
 
 figure
