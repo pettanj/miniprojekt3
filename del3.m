@@ -26,7 +26,7 @@ figure
 subplot(2,1,1);
 plot(D, Result);
 title('Resultat')   
-ylabel('Tryck (lb/ft³)')
+ylabel('Tryck (lb/ft^3)')
 xlabel('Djup (ft)')
 
 subplot(2,1,2);

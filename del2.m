@@ -9,5 +9,5 @@ end
 
 plot(D, Q);
 title('Resultat')   
-ylabel('Tryck (lb/ft³)')
+ylabel('Tryck (lb/ft^3)')
 xlabel('Djup (ft)')
