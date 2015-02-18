@@ -1,6 +1,7 @@
 D = [10:0.5:100];
 Result = [];
 Hvec = [];
+felvector=[];
 for k = D
     fel = 1;
     h = 0.5;
@@ -19,18 +20,23 @@ for k = D
     end
     Hvec = [Hvec, h];
     Result = [Result, Q];
+    felvector = [felvector, fel];
     
 end
 
 figure
-subplot(2,1,1);
+subplot(3,1,1);
 plot(D, Result);
 title('Resultat')   
 ylabel('Tryck (lb/ft^3)')
 xlabel('Djup (ft)')
 
-subplot(2,1,2);
+subplot(3,1,2);
 plot(D, Hvec);
 ylabel('Steglängd(h)')
 xlabel('Djup(ft)')
 
+subplot(3, 1, 3);
+plot(D, felvector);
+ylabel('Fel')
+xlabel('Djup (ft)')
